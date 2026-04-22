@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proof of Consent for Toll-Free SMS Verification - Brav Buddies</title>
+<title>Brav Buddies SMS Consent</title>
 
 <style>
 body {
@@ -53,6 +53,31 @@ pre {
     overflow-x: auto;
 }
 
+form {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+input, button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #3d5a5a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2f4444;
+}
+
 .footer {
     text-align: center;
     margin-top: 50px;
@@ -74,65 +99,36 @@ pre {
     <p class="tagline">Mission Activation and Emergency Response Intelligence</p>
 </div>
 
-<h1>Proof of Consent for Toll-Free SMS Verification</h1>
+<h1>SMS Consent & Compliance</h1>
 
-<h2>Application: Brav Buddies Emergency Mobilization System</h2>
-
-<hr>
-
-<h2>1. User Registration & Phone Number Collection</h2>
-<p>Users (firefighters, soldiers, and emergency personnel) register through a secure system where their phone numbers are collected for emergency communication purposes.</p>
+<p>This system is used by emergency response organizations to send time-sensitive operational alerts including incident activations, personnel availability checks, and training reminders.</p>
 
 <hr>
 
-<h2>2. Message Types</h2>
-<ul>
-<li>Incident activation alerts</li>
-<li>Personnel availability requests</li>
-<li>Training reminders</li>
-</ul>
+<h2>SMS Consent Form</h2>
+
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+<label>Full Name:</label>
+<input type="text" name="name" required>
+
+<label>Mobile Phone Number:</label>
+<input type="tel" name="phone" required>
+
+<label>
+<input type="checkbox" name="consent" required>
+I agree to receive SMS alerts from Brav Buddies Emergency Mobilization System about incident activations, availability checks, and training alerts. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for assistance.
+
+I have read the <a href="terms.html" target="_blank">Terms & Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.
+</label>
+
+<button type="submit">Submit Consent</button>
+
+</form>
 
 <hr>
 
-<h2>3. Opt-In Process (Web Form Consent)</h2>
-
-<p>Users provide explicit written consent through a secure web-based form prior to receiving any SMS messages.</p>
-
-<p><strong>Consent Language:</strong></p>
-<pre>
-By providing your mobile number and checking this box, you agree to receive SMS alerts from Brav Buddies Emergency Mobilization System about incident activations, availability checks, and training alerts.
-
-Message frequency varies. Message and data rates may apply.
-
-Reply HELP for help, STOP to unsubscribe at any time. Carriers are not liable for delayed or undelivered messages.
-
-SMS opt-in data and consent will not be shared with third parties.
-</pre>
-
-<p><strong>Consent Capture Requirements:</strong></p>
-<ul>
-<li>Consent checkbox is unchecked by default</li>
-<li>User must actively check the box before submission</li>
-<li>Consent is a separate action and not bundled</li>
-</ul>
-
-<p><strong>Record Keeping:</strong></p>
-<ul>
-<li>Phone number, timestamp, and consent status stored</li>
-<li>IP address and submission logs recorded</li>
-<li>Consent logs retrievable for verification</li>
-</ul>
-
-<p><strong>Confirmation Message:</strong></p>
-<pre>
-You have opted in to receive emergency alerts from Brav Buddies Emergency Mobilization System.
-
-Reply STOP to opt out, HELP for assistance. Msg & data rates may apply.
-</pre>
-
-<hr>
-
-<h2>4. Sample Message Content</h2>
+<h2>Sample Message</h2>
 
 <pre>
 INCIDENT ALERT: Structure Fire
@@ -140,22 +136,20 @@ Location: 123 Main St
 Report Time: 14:30
 Reply AVAILABLE or UNAVAILABLE
 
-- Emergency Mobilization System
 Reply STOP to opt out, HELP for assistance. Msg & data rates may apply.
 </pre>
 
 <hr>
 
-<h2>5. Opt-Out Mechanism</h2>
+<h2>Opt-Out</h2>
 <ul>
 <li>Reply STOP to unsubscribe</li>
 <li>Reply HELP for assistance</li>
-<li>Contact organization leadership</li>
 </ul>
 
 <hr>
 
-<h2>6. Data Privacy & Security</h2>
+<h2>Data Privacy</h2>
 <ul>
 <li>Data stored securely</li>
 <li>Access limited to authorized personnel</li>
@@ -164,12 +158,7 @@ Reply STOP to opt out, HELP for assistance. Msg & data rates may apply.
 
 <hr>
 
-<h2>7. Use Case Justification</h2>
-<p>This system is used for emergency response coordination. Messages are time-sensitive and operational, not promotional.</p>
-
-<hr>
-
-<p><strong>Declaration:</strong> All users provide explicit consent prior to receiving SMS communications.</p>
+<p><strong>Use Case:</strong> Emergency response coordination. Messages are operational and not promotional.</p>
 
 <div class="footer">
     <img src="logo.png" class="footer-logo">
@@ -177,4 +166,3 @@ Reply STOP to opt out, HELP for assistance. Msg & data rates may apply.
 
 </body>
 </html>
-
