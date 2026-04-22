@@ -1,276 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proof of Consent for Toll-Free SMS Verification - Brav Buddies</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            color: #333;
-            background: #fff;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 30px 20px;
-            background: linear-gradient(135deg, #3d5a5a 0%, #4a6666 100%);
-            border-radius: 12px;
-        }
-        .logo {
-            max-width: 300px;
-            height: auto;
-            margin: 0 auto 20px;
-            display: block;
-        }
-        .tagline {
-            color: #d4af7a;
-            font-size: 14px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 10px;
-        }
-        h1 {
-            color: #3d5a5a;
-            border-bottom: 3px solid #d4af7a;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #3d5a5a;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        h3 {
-            color: #4a6666;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #e5e7eb;
-            margin: 30px 0;
-        }
-        ul {
-            margin: 15px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin: 8px 0;
-        }
-        pre {
-            background: #f3f4f6;
-            padding: 15px;
-            border-radius: 6px;
-            border-left: 4px solid #d4af7a;
-            overflow-x: auto;
-            font-size: 14px;
-        }
-        .consent-item {
-            display: flex;
-            align-items: flex-start;
-            margin: 10px 0;
-        }
-        .consent-item::before {
-            content: "✓";
-            color: #d4af7a;
-            font-weight: bold;
-            margin-right: 10px;
-            font-size: 18px;
-        }
-        strong {
-            color: #1a1a1a;
-        }
-        .declaration {
-            background: #f9fafb;
-            border: 2px solid #d4af7a;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 2px solid #e5e7eb;
-        }
-        .footer-logo {
-            max-width: 200px;
-            height: auto;
-            margin: 0 auto;
-            opacity: 0.6;
-        }
-        .date {
-            text-align: right;
-            font-style: italic;
-            color: #6b7280;
-            margin-top: 20px;
-        }
-        @media print {
-            body {
-                margin: 0;
-                padding: 20px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proof of Consent for Toll-Free SMS Verification - Brav Buddies</title>
+
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, #3d5a5a, #4a6666);
+    border-radius: 12px;
+}
+
+.logo {
+    max-width: 220px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.tagline {
+    color: #d4af7a;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    border-bottom: 3px solid #d4af7a;
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #3d5a5a;
+}
+
+pre {
+    background: #f3f4f6;
+    padding: 15px;
+    border-left: 4px solid #d4af7a;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    opacity: 0.6;
+}
+</style>
 </head>
+
 <body>
-    <div class="header">
-        <img src="logo.png" alt="Brav Buddies Logo" class="logo">
-        <p class="tagline">Mission Activation and Emergency Response Intelligence</p>
-    </div>
 
-    <h1>Proof of Consent for Toll-Free SMS Verification</h1>
+<div class="header">
+    <img src="logo.png" class="logo">
+    <p class="tagline">Mission Activation and Emergency Response Intelligence</p>
+</div>
 
-    <h2>Application: Brav Buddies Emergency Mobilization System</h2>
+<h1>Proof of Consent for Toll-Free SMS Verification</h1>
 
-    <h3>Consent Mechanism</h3>
-    <p>Our application obtains explicit consent from users before sending any SMS messages. Below is the documented consent flow:</p>
+<h2>Application: Brav Buddies Emergency Mobilization System</h2>
 
-    <hr>
+<hr>
 
-    <h2>1. User Registration & Phone Number Collection</h2>
-    <p>When users (firefighters, soldiers, or emergency personnel) are added to the system, their phone numbers are collected and stored by authorized personnel (commanders or platoon leaders) with the understanding that these numbers will be used for emergency mobilization communications.</p>
+<h2>1. User Registration & Phone Number Collection</h2>
+<p>Users (firefighters, soldiers, and emergency personnel) register through a secure system where their phone numbers are collected for emergency communication purposes.</p>
 
-    <p><strong>Database Schema Evidence:</strong></p>
-    <ul>
-        <li>Table: <code>platoon_members</code></li>
-        <li>Field: <code>phone_number</code> (stored with user profile)</li>
-        <li>Purpose: Emergency contact and mobilization notifications</li>
-    </ul>
+<hr>
 
-    <hr>
-
-    <h2>2. Explicit Consent Language</h2>
-    <p>Users are informed through organizational onboarding that by providing their phone number to the Emergency Mobilization System, they are:</p>
-
-    <div class="consent-item"><strong>Consenting to receive time-sensitive emergency mobilization alerts</strong></div>
-    <div class="consent-item"><strong>Agreeing to receive training completion reminders</strong></div>
-    <div class="consent-item"><strong>Understanding that messages are critical for mission readiness</strong></div>
-    <div class="consent-item"><strong>Aware they can respond to messages to confirm availability</strong></div>
-
-    <p><strong>Message Types:</strong></p>
-    <ul>
-        <li>Emergency mission activation notifications</li>
-        <li>Training status reminders</li>
-        <li>Response acknowledgment confirmations</li>
-    </ul>
-
-    <hr>
-
-    <h2>3. Opt-In Process (Web Form Consent)</h2>
-<p>Users provide explicit written consent through a secure web-based registration form before receiving any SMS messages.</p>
-
-<p><strong>Web Form Consent Language:</strong></p>
-<pre>
-By entering your phone number and submitting this form, you agree to receive SMS messages from the Brav Buddies Emergency Mobilization System. Messages may include incident activation alerts, personnel availability requests, and training reminders.
-
-Message frequency varies based on operational activity. Message and data rates may apply.
-
-Reply STOP to opt out or HELP for assistance.
-</pre>
-
-<p><strong>Consent Capture Process:</strong></p>
+<h2>2. Message Types</h2>
 <ul>
-<li>User enters phone number in secure web form</li>
-<li>User must check a required consent checkbox before submission</li>
-<li>Form cannot be submitted without consent acknowledgment</li>
-<li>Timestamp, IP address, and phone number are logged in the system database</li>
+<li>Incident activation alerts</li>
+<li>Personnel availability requests</li>
+<li>Training reminders</li>
 </ul>
 
-<p><strong>Record Storage:</strong></p>
+<hr>
+
+<h2>3. Opt-In Process (Web Form Consent)</h2>
+
+<p>Users provide explicit written consent through a secure web-based form prior to receiving any SMS messages.</p>
+
+<p><strong>Consent Language:</strong></p>
+<pre>
+By providing your mobile number and checking this box, you agree to receive SMS alerts from Brav Buddies Emergency Mobilization System about incident activations, availability checks, and training alerts.
+
+Message frequency varies. Message and data rates may apply.
+
+Reply HELP for help, STOP to unsubscribe at any time. Carriers are not liable for delayed or undelivered messages.
+
+SMS opt-in data and consent will not be shared with third parties.
+</pre>
+
+<p><strong>Consent Capture Requirements:</strong></p>
 <ul>
-<li>Consent records stored in database with timestamp and user ID</li>
-<li>Logs can be retrieved for verification upon request</li>
-<li>All consent records are securely maintained</li>
+<li>Consent checkbox is unchecked by default</li>
+<li>User must actively check the box before submission</li>
+<li>Consent is a separate action and not bundled</li>
+</ul>
+
+<p><strong>Record Keeping:</strong></p>
+<ul>
+<li>Phone number, timestamp, and consent status stored</li>
+<li>IP address and submission logs recorded</li>
+<li>Consent logs retrievable for verification</li>
 </ul>
 
 <p><strong>Confirmation Message:</strong></p>
 <pre>
-You have successfully opted in to receive emergency alerts from Brav Buddies Emergency Mobilization System.
+You have opted in to receive emergency alerts from Brav Buddies Emergency Mobilization System.
+
 Reply STOP to opt out, HELP for assistance. Msg & data rates may apply.
 </pre>
 
-    <h2>4. Sample Message Content</h2>
+<hr>
 
-    <p><strong>Mission Activation:</strong></p>
-    <pre>MISSION ALERT: [Mission Name]
-Location: [Address]
-Report: [Date/Time]
-Reply: AVAILABLE or UNAVAILABLE
-- Emergency Mobilization System</pre>
+<h2>4. Sample Message Content</h2>
 
-    <p><strong>Training Reminder:</strong></p>
-    <pre>Training Update: [Course Name]
-Status: Incomplete
-Complete by: [Date]
-Contact your leader for access.
-- Emergency Mobilization System</pre>
+<pre>
+INCIDENT ALERT: Structure Fire
+Location: 123 Main St
+Report Time: 14:30
+Reply AVAILABLE or UNAVAILABLE
 
-    <hr>
+- Emergency Mobilization System
+Reply STOP to opt out, HELP for assistance. Msg & data rates may apply.
+</pre>
 
-    <h2>5. Opt-Out Mechanism</h2>
-    <p>Users can opt-out by:</p>
-    <ul>
-        <li>Contacting their unit commander/leader to remove their phone number</li>
-        <li>Replying "STOP" to any message (standard SMS opt-out)</li>
-        <li>Requesting removal through their chain of command</li>
-    </ul>
-    
-    <p><strong>OPT Out Messaging:</strong></p>
-    <pre>
-Reply STOP to opt out, HELP for assistance. Msg & data rates may apply.</pre>
-    
-    <hr>
+<hr>
 
-    <h2>6. Data Privacy & Security</h2>
-    <ul>
-        <li>Phone numbers are stored securely in an encrypted database</li>
-        <li>Access restricted to authorized organizational leaders</li>
-        <li>Used exclusively for emergency mobilization purposes</li>
-        <li>Compliant with organizational data handling policies</li>
-    </ul>
+<h2>5. Opt-Out Mechanism</h2>
+<ul>
+<li>Reply STOP to unsubscribe</li>
+<li>Reply HELP for assistance</li>
+<li>Contact organization leadership</li>
+</ul>
 
-    <hr>
+<hr>
 
-    <h2>7. Use Case Justification</h2>
-    <p><strong>Emergency Services & Public Safety:</strong></p>
-    <p>This application serves emergency response organizations (fire departments, military reserve units, emergency medical services) where rapid mobilization is critical for public safety. SMS notifications are essential for:</p>
-    <ul>
-        <li>Time-sensitive mission activations</li>
-        <li>Personnel accountability during emergencies</li>
-        <li>Ensuring trained personnel respond to critical incidents</li>
-        <li>Maintaining operational readiness</li>
-    </ul>
+<h2>6. Data Privacy & Security</h2>
+<ul>
+<li>Data stored securely</li>
+<li>Access limited to authorized personnel</li>
+<li>No third-party sharing of consent data</li>
+</ul>
 
-    <hr>
+<hr>
 
-    <h2>Verification Contact</h2>
-    <ul>
-        <li><strong>Organization Type:</strong> Emergency Response / Public Safety</li>
-        <li><strong>Use Case:</strong> Emergency Mobilization & Training Readiness</li>
-        <li><strong>Consent Method:</strong> Organizational enrollment with explicit purpose disclosure</li>
-        <li><strong>Message Frequency:</strong> Variable (based on emergency activations and training status)</li>
-        <li><strong>Opt-Out:</strong> Available via chain of command or standard SMS STOP</li>
-    </ul>
+<h2>7. Use Case Justification</h2>
+<p>This system is used for emergency response coordination. Messages are time-sensitive and operational, not promotional.</p>
 
-    <hr>
+<hr>
 
-    <div class="declaration">
-        <p><strong>Declaration:</strong></p>
-        <p>All users added to this system are informed of SMS communications as part of their emergency response duties. Phone numbers are provided with full knowledge and consent for emergency mobilization purposes only.</p>
-    </div>
+<p><strong>Declaration:</strong> All users provide explicit consent prior to receiving SMS communications.</p>
 
-    <p class="date">Date: April 2, 2026</p>
+<div class="footer">
+    <img src="logo.png" class="footer-logo">
+</div>
 
-    <div class="footer">
-        <img src="logo2.png" alt="Brav Buddies" class="footer-logo">
-    </div>
 </body>
 </html>
-
 
